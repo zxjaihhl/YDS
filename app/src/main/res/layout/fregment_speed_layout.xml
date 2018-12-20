@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@mipmap/mileage" />
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:textSize="28sp"
+                        android:textColor="@color/color_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_0000km" />
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@mipmap/temperature" />
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_speed_line_four"
+                        android:layout_width="80dp"
+                        android:layout_height="6dp"
+                        android:src="@mipmap/speed_line_four"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@mipmap/speed_line_five"
+                        />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="160dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:textSize="30sp"
+                        android:textColor="@color/color_white"
+                        android:text="@string/tv_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:src="@mipmap/speed" />
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="240dp"
+                        android:layout_height="240dp"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageView
+                            android:id="@+id/iv_speed_line"
+                            android:src="@mipmap/speed_line"
+                            android:layout_width="120dp"
+                            android:layout_height="7dp"
+                            />
+                    </RelativeLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:src="@mipmap/speed_line_two"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:gravity="center">
+                    <TextView
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="50sp"
+                        android:text="@string/tv_00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

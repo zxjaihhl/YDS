@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/color_white">
+    <ImageView
+        android:id="@+id/iv_myphoto"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+
+        />
+    <EditText
+        android:id="@+id/et_user"
+        android:hint="账号"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_marginTop="10dp"
+        android:hint="密码"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:inputType="textPassword"
+        />
+    <LinearLayout
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <CheckBox
+        android:id="@+id/keeppass"
+        android:text="记住密码"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:textSize="18sp"
+        android:id="@+id/btn_login"
+        android:background="@drawable/button_bg"
+        android:text="登录"
+        android:textColor="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:textSize="18sp"
+        android:id="@+id/btn_register"
+        android:background="@drawable/button_bg"
+        android:text="注册"
+        android:textColor="@color/color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/tv_forget"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记密码？"
+        android:layout_gravity="right"/>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/tv_tuijian"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="100dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_tuijian"/>
+        <TextView
+            android:layout_toRightOf="@+id/tv_tuijian"
+            android:layout_alignBottom="@+id/tv_tuijian"
+            android:text="@string/tv_shangping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+    <com.zxjaihhl.yds.view.FixedGridView
+        android:id="@+id/gv_operation"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/font_black_5"
+        android:horizontalSpacing="1px"
+        android:numColumns="1"
+        android:paddingBottom="1px"
+        android:paddingTop="1px"
+        android:scrollbars="none"
+        android:verticalSpacing="1px" />
+</LinearLayout>

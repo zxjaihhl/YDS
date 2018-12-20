@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_led"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_led"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@mipmap/led" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <CheckBox
+                android:id="@+id/select_four"
+                style="@style/CustomCheckboxThemeFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/select_three"
+                style="@style/CustomCheckboxThemeThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center">
+            <ImageButton
+                android:background="@color/color_white"
+                android:id="@+id/btn_light"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/light_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_led"
+            android:gravity="center"
+            android:paddingBottom="5dp">
+
+            <CheckBox
+                android:id="@+id/select_one"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/select_two"
+                style="@style/CustomCheckboxThemeTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_led"
+        android:orientation="vertical">
+
+        <com.zxjaihhl.yds.view.WheelView
+            android:id="@+id/main_wv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</RelativeLayout>
